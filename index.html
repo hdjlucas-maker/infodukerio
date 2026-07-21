@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Assistência Técnica em Informática no Rio de Janeiro | Infoduke Rio</title>
+<meta name="description" content="Assistência técnica em impressoras, computadores, notebooks, monitores, nobreaks e recarga de cartucho no Rio de Janeiro, RJ. Orçamento rápido e grátis com a Infoduke Rio.">
+<meta name="keywords" content="assistência técnica informática Rio de Janeiro, conserto de impressora RJ, conserto de notebook, manutenção de computador, recarga de cartucho, Infoduke Rio">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://infodukerio.netlify.app/">
+
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Assistência Técnica em Informática no Rio de Janeiro | Infoduke Rio">
+<meta property="og:description" content="Conserto de impressoras, computadores, notebooks, periféricos e recarga de cartucho. Orçamento rápido e grátis.">
+<meta property="og:url" content="https://infodukerio.netlify.app/">
+<meta property="og:image" content="https://infodukerio.netlify.app/og-image.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Infoduke Rio">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Assistência Técnica em Informática no Rio de Janeiro | Infoduke Rio">
+<meta name="twitter:description" content="Conserto de impressoras, computadores, notebooks, periféricos e recarga de cartucho. Orçamento rápido e grátis.">
+<meta name="twitter:image" content="https://infodukerio.netlify.app/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Playfair+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ElectronicsStore",
+  "name": "Infoduke Rio",
+  "image": "https://infodukerio.netlify.app/og-image.jpg",
+  "telephone": "+5521988765586",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Presidente Tancredo Neves, 426, Itatiaia",
+    "addressLocality": "Duque de Caxias",
+    "addressRegion": "RJ",
+    "addressCountry": "BR"
+  },
+  "areaServed": { "@type": "State", "name": "Rio de Janeiro" },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "sameAs": ["https://www.instagram.com/infodukerio/"],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de impressoras" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de computadores e notebooks" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Venda e suporte de periféricos" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de nobreaks" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Configuração de projetores e monitores" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recarga de cartucho de impressora" } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Barra de progresso de scroll -->
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<header>
+  <div class="header-inner">
+    <a href="#topo" class="brand">
+      <img src="assets/logo.jpg" alt="Logo Infoduke Rio">
+      <span class="brand-text">Infoduke Rio</span>
+    </a>
+    <div class="header-cta">
+      <a href="#formulario" class="btn btn-ghost">Pedir orçamento</a>
+      <a href="https://wa.me/5521988765586?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica." class="btn btn-whats" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <canvas id="grid-canvas" aria-hidden="true"></canvas>
+    <div class="wrap hero-grid">
+      <div class="reveal" data-reveal>
+        <p class="eyebrow terminal-line">
+          <span class="terminal-prompt">&gt;</span>
+          <span id="terminal-text"></span><span class="cursor-blink">_</span>
+        </p>
+        <h1>Seu computador travou? <span class="hl-blue">Sua</span> <span class="hl-yellow">impressora</span> parou? A <span class="hl-red">Infoduke Rio</span> resolve.</h1>
+        <p class="lead">Assistência técnica em informática para casas e empresas no Rio de Janeiro. Diagnóstico honesto, prazo combinado e orçamento sem compromisso.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/5521988765586?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica." class="btn btn-whats btn-lg" target="_blank" rel="noopener">
+            Chamar no WhatsApp
+          </a>
+          <a href="tel:+5521988765586" class="btn btn-outline-red btn-lg">Ligar agora</a>
+        </div>
+        <div class="trust-row">
+          <span><span class="dot"></span>Orçamento grátis</span>
+          <span><span class="dot"></span>Atendimento em todo o Rio de Janeiro, RJ</span>
+          <span><span class="dot"></span>Loja física em Duque de Caxias</span>
+        </div>
+      </div>
+
+      <div class="ticket-wrap reveal" data-reveal data-reveal-delay="120">
+        <div class="ticket">
+          <div class="scan-line"></div>
+          <div class="ticket-head">
+            <span class="tag">Ordem de serviço</span>
+            <span class="num">Nº 0427</span>
+          </div>
+          <p class="ticket-title">Diagnóstico rápido</p>
+          <div class="ticket-row"><span class="label">Equipamento</span><span>Notebook / Desktop</span></div>
+          <div class="ticket-row"><span class="label">Problema</span><span>Lento, travando</span></div>
+          <div class="ticket-row"><span class="label">Prazo</span><span>Combinado com você</span></div>
+          <div class="ticket-row"><span class="label">Orçamento</span><span>Grátis</span></div>
+          <span class="ticket-status"><span class="status-dot"></span>Pronto para atender</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal" data-reveal>
+        <p class="eyebrow">O que fazemos</p>
+        <h2>Manutenção completa em informática</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" data-reveal data-reveal-delay="0">
+          <div class="icon ic-blue">🖨️</div>
+          <h3>Impressoras</h3>
+          <p>Manutenção, limpeza e reparo de impressoras de todas as marcas.</p>
+        </div>
+        <div class="service-card reveal" data-reveal data-reveal-delay="60">
+          <div class="icon ic-yellow">🖥️</div>
+          <h3>Computadores e notebooks</h3>
+          <p>Formatação, limpeza interna, upgrade de peças e resolução de lentidão.</p>
+        </div>
+        <div class="service-card reveal" data-reveal data-reveal-delay="120">
+          <div class="icon ic-red">🖱️</div>
+          <h3>Periféricos</h3>
+          <p>Venda e suporte de teclado, mouse e outros acessórios.</p>
+        </div>
+        <div class="service-card reveal" data-reveal data-reveal-delay="0">
+          <div class="icon ic-blue">🔋</div>
+          <h3>Nobreaks</h3>
+          <p>Instalação e manutenção para proteger seus equipamentos de quedas de energia.</p>
+        </div>
+        <div class="service-card reveal" data-reveal data-reveal-delay="60">
+          <div class="icon ic-yellow">📽️</div>
+          <h3>Projetores e monitores</h3>
+          <p>Configuração e reparo para uso doméstico, escolar ou empresarial.</p>
+        </div>
+        <div class="service-card reveal" data-reveal data-reveal-delay="120">
+          <div class="icon ic-red">🧴</div>
+          <h3>Recarga de cartucho</h3>
+          <p>Recarga rápida de cartuchos de tinta, economizando na sua impressão.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head reveal" data-reveal>
+        <p class="eyebrow">Como funciona</p>
+        <h2>Do problema à solução, sem enrolação</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal" data-reveal data-reveal-delay="0">
+          <p class="step-num">Passo 1</p>
+          <h3>Você entra em contato</h3>
+          <p>Chame no WhatsApp, ligue ou preencha o formulário contando o problema.</p>
+        </div>
+        <div class="step reveal" data-reveal data-reveal-delay="90">
+          <p class="step-num">Passo 2</p>
+          <h3>Diagnóstico e orçamento grátis</h3>
+          <p>Avaliamos o equipamento e te passamos um orçamento claro, sem compromisso.</p>
+        </div>
+        <div class="step reveal" data-reveal data-reveal-delay="180">
+          <p class="step-num">Passo 3</p>
+          <h3>Reparo com prazo combinado</h3>
+          <p>Você aprova, executamos o serviço e entregamos no prazo combinado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROVA SOCIAL ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head reveal" data-reveal>
+        <p class="eyebrow">Quem confia na Infoduke Rio</p>
+        <h2>Clientes reais, na sua região</h2>
+      </div>
+      <div class="proof-grid">
+        <div class="proof-card reveal" data-reveal>
+          <span class="quote-mark">"</span>
+          <blockquote>Levei o notebook achando que ia comprar outro. Voltou rápido e funcionando como novo.</blockquote>
+          <p class="who">Cliente Infoduke Rio · Rio de Janeiro, RJ</p>
+        </div>
+        <div class="ig-embed reveal" data-reveal data-reveal-delay="100">
+          <div class="ig-top">
+            <img src="assets/logo.jpg" alt="Logo Infoduke Rio">
+            <div>
+              <div class="h">@infodukerio</div>
+              <div class="s">Publicação em destaque</div>
+            </div>
+          </div>
+          <div class="ig-body">
+            <div class="ig-play">▶</div>
+            <p>Veja de perto um dos nossos atendimentos no Instagram.</p>
+          </div>
+          <a href="https://www.instagram.com/reel/C_04qWOxgty/" target="_blank" rel="noopener" class="ig-cta">Ver publicação no Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO / FORMULÁRIO ===== -->
+  <section class="section" id="formulario" style="padding-top:0;">
+    <div class="wrap">
+      <div class="contact reveal" data-reveal>
+        <div class="contact-info">
+          <h2>Fale com a Infoduke Rio agora</h2>
+          <p>Orçamento rápido e grátis. Atendemos em todo o Rio de Janeiro, RJ.</p>
+
+          <div class="info-row">
+            <span class="ic">📍</span>
+            <div>
+              <div class="t">Endereço da loja</div>
+              <div>Av. Presidente Tancredo Neves, 426 — Itatiaia, Duque de Caxias</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="ic">📞</span>
+            <div>
+              <div class="t">Telefone / WhatsApp</div>
+              <div>(21) 98876-5586</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="ic">📷</span>
+            <div>
+              <div class="t">Instagram</div>
+              <div>@infodukerio</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="ic">🕒</span>
+            <div>
+              <div class="t">Horário de atendimento</div>
+              <div>Segunda a sábado, das 9h às 18h</div>
+            </div>
+          </div>
+
+          <div class="quick-ctas">
+            <a href="https://wa.me/5521988765586?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica." class="btn btn-whats" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="tel:+5521988765586" class="btn btn-outline-red">Ligar agora</a>
+          </div>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div class="field" data-field="nome">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+            <span class="err-msg">Digite seu nome.</span>
+          </div>
+          <div class="field" data-field="telefone">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(21) 90000-0000">
+            <span class="err-msg">Digite um telefone válido.</span>
+          </div>
+          <div class="field" data-field="servico">
+            <label for="servico">Tipo de serviço</label>
+            <select id="servico" name="servico">
+              <option value="">Selecione</option>
+              <option value="Impressora">Impressora</option>
+              <option value="Computador/Notebook">Computador ou notebook</option>
+              <option value="Periféricos">Periféricos</option>
+              <option value="Nobreak">Nobreak</option>
+              <option value="Recarga de cartucho">Recarga de cartucho</option>
+              <option value="Outro">Outro</option>
+            </select>
+            <span class="err-msg">Selecione um serviço.</span>
+          </div>
+          <div class="field" data-field="mensagem">
+            <label for="mensagem">Conte o que está acontecendo</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Ex: meu notebook não liga mais"></textarea>
+            <span class="err-msg">Descreva o problema.</span>
+          </div>
+          <button type="submit" class="submit-btn">Enviar e pedir orçamento</button>
+          <p class="form-msg" id="form-msg">Recebemos sua mensagem. Vamos te chamar em breve no telefone informado.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <a href="#topo" class="footer-brand">
+        <img src="assets/logo.jpg" alt="Logo Infoduke Rio">
+        <span class="brand-text">Infoduke Rio</span>
+      </a>
+      <nav class="footer-nav">
+        <a href="#formulario">Orçamento</a>
+        <a href="https://www.instagram.com/infodukerio/" target="_blank" rel="noopener">Instagram</a>
+        <a href="tel:+5521988765586">Telefone</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>Av. Presidente Tancredo Neves, 426 — Itatiaia, Duque de Caxias/RJ</span>
+      <span>Atendimento em todo o Rio de Janeiro, RJ</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="https://wa.me/5521988765586?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica." class="btn btn-whats" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="tel:+5521988765586" class="btn btn-outline-red">Ligar</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
